@@ -1,8 +1,8 @@
 player1_name = localStorage.getItem("player1_name");
 player2_name  = localStorage.getItem("player2_name");
 
-player1score = 0;
-player2score = 0;
+player1_score = 0;
+player2_score = 0;
 
 document.getElementById("player1_name").innerHTML = player1_name + " :";
 document.getElementById("player2_name").innerHTML = player2_name +" :";
@@ -33,7 +33,7 @@ function check(){
     answer = get_answer.toLowerCase();
     console.log("answer in lowercase -"+answer);
 
-    if(answer == word)
+    if(get_answer == actual_answer)
     {
         if(answer_turn == "player1_name")
         {
